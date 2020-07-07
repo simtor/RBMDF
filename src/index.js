@@ -16,6 +16,4 @@ rl.question("Please Input the product that your looking for: ", async (answer) =
       console.log("You Product has not  been found", answer)
 
     }
-
-
   });
