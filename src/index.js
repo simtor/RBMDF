@@ -31,6 +31,9 @@ function inputValiidation(result){
     })
   }
 }
+
+//Ah - sort of! Try just adding the bit you’re repeating into the function, i.e. - the part about checking the result and returning true or false. 
+//You could then wrap that part in a while (resultNotFound) loop so that you don’t need to keep repeating the same code
 function inputHandler(answer) {
   let result = correctAswers.includes(answer)
   if(result){
