@@ -5,35 +5,43 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-
 let correctAswers = ["PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
  
-
+function inputValiidation(result){
+  if (result){
+    console.log("You Product has  been found", answer)
+    rl.close();
+  }
+  else{
+    rl.setPrompt("The Medical licence number was not found :(\n");
+    console.log(correctAswers);
+    // console.log("Please input The Medical licence number: ")
+    rl.prompt();
+    rl.on("line",(answer)=>{
+      let result = correctAswers.includes(answer)
+      if(result){
+        console.log("You Product has  been found", answer)
+      rl.close();
+      }   
+      else{
+        rl.setPrompt("The Medical licence number was not found :(\n");
+        console.log(correctAswers);
+        rl.prompt();
+      }
+    })
+  }
+}
 function inputHandler(answer) {
   let result = correctAswers.includes(answer)
-  if (result){
-        console.log("You Product has  been found", answer)
-        rl.close();
-    }
-    else{
-      rl.setPrompt("The Medical licence number was not found :(\n");
-      console.log(correctAswers);
-      // console.log("Please input The Medical licence number: ")
-      rl.prompt();
-      rl.on("line",(answer)=>{
-        let result = correctAswers.includes(answer)
-        if(result){
-          console.log("You Product has  been found", answer)
-        rl.close();
-        }   
-        else{
-          rl.setPrompt("The Medical licence number was not found :(\n");
-          console.log(correctAswers);
-          rl.prompt();
-        }
-      })
-    }
+  if(result){
+    console.log("You Product has been found", answer)
+  }
+  else{
+    inputValiidation();
+  }
+  // return result;
 }
+
 
 rl.question("Input your medical licence number: ", inputHandler)
 rl.on("close",()=>{
