@@ -6,10 +6,6 @@ const rl = readline.createInterface({
 });
 
 
-
-  //https://www.youtube.com/watch?v=vU6OTnhj3wM
-
-
 let correctAswers = ["PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
  
 
@@ -71,6 +67,22 @@ rl.on("close",()=>{
 
 
 
+// else{
+//     console.log("You Product has not  been found", answer)
+//     rl.setPrompt("Please input product number again: ");
+//     console.log(correctAswers);
+//     rl.prompt();
+//     rl.on('line',(answer)=>{
+//       var result  = correctAswers.includes(answer);
+//       if(result){
+//         console.log("You Product has  been found", answer)
+//         rl.close();
+//       }else{
+//         rl.setPrompt(`Your answer of ${answer} is incorrect\n`)
+//         rl.prompt();
+//       }
+//     })
+//   }
 
 
 
