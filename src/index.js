@@ -5,8 +5,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-let correctAswers = ["PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
- 
+
 function inputValiidation(result){
   if (result){
     console.log("You Product has  been found", answer)
