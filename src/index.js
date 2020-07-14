@@ -5,6 +5,8 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+let correctAswers = [name="PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
+
 
 function inputValiidation(result){
   if (result){
