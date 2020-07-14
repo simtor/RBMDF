@@ -12,6 +12,7 @@ function inputHandler(answer) {
   let result = correctAswers.includes(answer)
   if (result) {
     console.log("You Product has been found", answer)
+    rl.close()
     return true
   } else {
     rl.write("The Medical licence number was not found :(\n")
