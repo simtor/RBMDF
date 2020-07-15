@@ -8,6 +8,7 @@ const rl = readline.createInterface({
 let correctAswers = ["PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
 
 
+
 function inputHandler(answer) {
   let result = correctAswers.includes(answer)
   if (result) {
