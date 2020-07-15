@@ -1,43 +1,35 @@
 const readline = require('readline');
-const { rawListeners } = require('process');
 const rl = readline.createInterface({
   input : process.stdin, 
   output : process.stdout
 });
+
 let PL001730050 = {name: 'Ibugel gel', dose: '10mg', Substance: 'Ibuprofen', url:'https://mhraproductsproduction.blob.core.windows.net/docs/54454db7a69e9153ab7302232cdb8ee9230579ca'}
 // console.log(PL001730050);
 // console.log(Object.values(PL001730050));
-
 let PL001655013 = {name: 'Anadin Extra', dose: '5mg', Substance: 'Paracetamol', url:'https://mhraproductsproduction.blob.core.windows.net/docs/10c02830183326751553be62be5e2564fb47e970'}
-// console.log(PL001655013);
-
 let PL136060206 = {name: 'Tadalafil 10mg film-coated tablets', dose: '10mg', Substance: 'Tadafil', url:'https://mhraproductsproduction.blob.core.windows.net/docs/a1744b861fbda647f286cc70865d30cf2673c077'}
-// console.log(PL136060206);
-
 let PL252980158 = {name: 'Nabilone 1mg capsules', dose: '1mg', Substance: 'Nabilone', url:'https://mhraproductsproduction.blob.core.windows.net/docs/b68e1e028e44806a00a65d016aec4f1c90436ac4'}
-// console.log(PL252980158);
-
 let PL201170079 = {name: 'Ramipril 2.5mg tablets', dose: '2.5mg', Substance: 'Ramipril', url:'https://mhraproductsproduction.blob.core.windows.net/docs/bdc8d29cd2957f0ffdd230f6f47a5d9cf5b3f039'}
-// console.log(PL201170079);
+let products = {
+  "PL001730050": PL001730050,
+  "PL001655013": PL001655013,
+  "PL136060206": PL136060206,
+  "PL252980158": PL252980158,
+  "PL201170079": PL201170079
+}
+// let correctAswers = [PL001730050 = Object.values(PL001730050), PL001655013 = Object.values(PL001655013), PL136060206 = Object.values(PL136060206), PL252980158 = Object.values(PL252980158), PL201170079 = Object.values(PL201170079)]
 
-let correctAswers = [PL001730050 = Object.values(PL001730050), PL001655013 = Object.values(PL001655013), PL136060206 = Object.values(PL136060206), PL252980158 = Object.values(PL252980158), PL201170079 = Object.values(PL201170079)]
-
-// function searchEngine(){
-//   let result = correctAswers.includes(PL201170079)
-//   if (result){
-    
-//   }
-// }
-
-// searchEngine();
-// console.log(correctAswers[1]);
 
 function inputHandler(answer) {
-  let result = correctAswers.includes(answer)
+  // let result = correctAswers.includes(answer)
+  let result = products[answer]
   if (result) {
-    if(answer = PL001730050){
-      console.log(correctAswers[1]);
-    }
+    // console.log(Object.values(result))#
+    // console.log(Object.getOwnPropertyNames(result))
+    var myString = JSON.stringify(result, null, 2);
+    console.log(myString);
+    // console.log(Object.values(result))
     console.log("You Product has been found", answer)
     rl.close()
     return true
@@ -48,6 +40,26 @@ function inputHandler(answer) {
 }
 
 rl.question("Input your medical licence number: ", inputHandler)
+
+
+// function car(brand, color, year, price) {
+//   this.brand = brand;
+//   this.color = color;
+//   this.year = year;
+//   this.price = price;
+// }
+
+// var my = new Array();
+// my.push(new car("Ford", "Black", 2017, 15000));
+// my.push(new car("Hyundai", "Red", 2017, 17000));
+
+// function searchEngine(){
+//   let result = correctAswers.includes(PL201170079)
+//   if (result){
+//   }
+// }
+// searchEngine();
+// console.log(correctAswers[1]);
 
 // const readline = require('readline');
 // const { rawListeners } = require('process');

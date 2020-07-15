@@ -1,4 +1,5 @@
-const readline = require("readline");
+let readline = require("readline");
+const Product = require("models/product.js")
  
 const rl = readline.createInterface({
   input: process.stdin,
