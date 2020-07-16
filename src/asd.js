@@ -5,8 +5,6 @@ const rl = readline.createInterface({
 });
 
 let PL001730050 = {name: 'Ibugel gel', dose: '10mg', Substance: 'Ibuprofen', url:'https://mhraproductsproduction.blob.core.windows.net/docs/54454db7a69e9153ab7302232cdb8ee9230579ca'}
-// console.log(PL001730050);
-// console.log(Object.values(PL001730050));
 let PL001655013 = {name: 'Anadin Extra', dose: '5mg', Substance: 'Paracetamol', url:'https://mhraproductsproduction.blob.core.windows.net/docs/10c02830183326751553be62be5e2564fb47e970'}
 let PL136060206 = {name: 'Tadalafil 10mg film-coated tablets', dose: '10mg', Substance: 'Tadafil', url:'https://mhraproductsproduction.blob.core.windows.net/docs/a1744b861fbda647f286cc70865d30cf2673c077'}
 let PL252980158 = {name: 'Nabilone 1mg capsules', dose: '1mg', Substance: 'Nabilone', url:'https://mhraproductsproduction.blob.core.windows.net/docs/b68e1e028e44806a00a65d016aec4f1c90436ac4'}
@@ -18,7 +16,6 @@ let products = {
   "PL252980158": PL252980158,
   "PL201170079": PL201170079
 }
-// let correctAswers = [PL001730050 = Object.values(PL001730050), PL001655013 = Object.values(PL001655013), PL136060206 = Object.values(PL136060206), PL252980158 = Object.values(PL252980158), PL201170079 = Object.values(PL201170079)]
 
 
 function inputHandler(answer) {
@@ -27,8 +24,13 @@ function inputHandler(answer) {
   if (result) {
     // console.log(Object.values(result))#
     // console.log(Object.getOwnPropertyNames(result))
-    var myString = JSON.stringify(result, null, 2);
-    console.log(myString);
+    // console.log(result);
+    for(const property in result) {
+      console.log(`${property}: ${result[property]}`);
+  }
+    // console.log(Object.entries(result));
+    // var myString = JSON.stringify(result, null, 2);
+    // console.log(myString);
     // console.log(Object.values(result))
     console.log("You Product has been found", answer)
     rl.close()
