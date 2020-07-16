@@ -19,30 +19,44 @@ let products = {
 
 
 function inputHandler(answer) {
-  // let result = correctAswers.includes(answer)
   let result = products[answer]
   if (result) {
-    // console.log(Object.values(result))#
-    // console.log(Object.getOwnPropertyNames(result))
-    // console.log(result);
     for(const property in result) {
       console.log(`${property}: ${result[property]}`);
   }
-    // console.log(Object.entries(result));
-    // var myString = JSON.stringify(result, null, 2);
-    // console.log(myString);
-    // console.log(Object.values(result))
     console.log("You Product has been found", answer)
-    rl.close()
+    // console.log("Would you like to search for another product or Quit.\n")
+    rl.question("Press S to search again or Q to  quit: ", (nextMove)=>{
+      console.log(nextMove);
+      if(nextMove =="s"||"S"){
+        rl.question("Input your medical licence number: ", inputHandler)
+      }else if (nextMove == "Q"||"q"){
+        rl.close()
+        // process.kill(process.pid, 'SIGTERM')
+      }else{
+        console.log("oops")
+      }
+      rl.close
+    })
+    // rl.close()
     return true
   } else {
     rl.write("The Medical licence number was not found :(\n")
     rl.question("Input your medical licence number: ", inputHandler)
   }
 }
-
 rl.question("Input your medical licence number: ", inputHandler)
 
+
+
+// let result = correctAswers.includes(answer)
+// console.log(Object.values(result))
+    // console.log(Object.getOwnPropertyNames(result))
+    // console.log(result);
+    // console.log(Object.entries(result));
+    // var myString = JSON.stringify(result, null, 2);
+    // console.log(myString);
+    // console.log(Object.values(result))
 
 // function car(brand, color, year, price) {
 //   this.brand = brand;
