@@ -28,7 +28,7 @@ function inputHandler(answer) {
     // console.log("Would you like to search for another product or Quit.\n")
     rl.question("Press S to search again or Q to  quit: ", (nextMove)=>{
       console.log(nextMove);
-      if(nextMove =="s"||"S"){
+      if(nextMove === "S"){
         rl.question("Input your medical licence number: ", inputHandler)
       }else if (nextMove == "Q"||"q"){
         rl.close()
