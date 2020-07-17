@@ -17,7 +17,6 @@ let products = {
   "PL201170079": PL201170079
 }
 
-
 function inputHandler(answer) {
   let result = products[answer]
   if (result) {
@@ -25,17 +24,14 @@ function inputHandler(answer) {
       console.log(`${property}: ${result[property]}`);
   }
     console.log("You Product has been found", answer)
-    rl.question("Press S to search again or Q to  quit: ", (nextMove)=>{
-      if(nextMove == "S"){
-        rl.question("Input your medical licence number: ", inputHandler)
-      }else if (nextMove == "Q"){
+    rl.question("Press S to search again or Q to  quit: ", (nextMove)=>{ 
+      if (nextMove === "Q") {
         rl.close()
-      }else{
+      } else {
         rl.question("Input your medical licence number: ", inputHandler)
       }
       rl.close
     })
-    // rl.close()
     return true
   } else {
     rl.write("The Medical licence number was not found :(\n")
@@ -44,7 +40,59 @@ function inputHandler(answer) {
 }
 rl.question("Input your medical licence number: ", inputHandler)
 
+// let readline = require("readline");
+// const Product = require("models/product.js")
+ 
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
+// let correctAswers = ["PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
+
+
+
+// function inputHandler(answer) {
+//   let result = correctAswers.includes(answer)
+//   if (result) {
+//     console.log("You Product has been found", answer)
+//     rl.close()
+//     return true
+//   } else {
+//     rl.write("The Medical licence number was not found :(\n")
+//     rl.question("Input your medical licence number: ", inputHandler)
+//   }
+// }
+
+// rl.question("Input your medical licence number: ", inputHandler)
+
+// exports.inputHandler = inputHandler
+
+// function inputHandler(answer) {
+//   let result = products[answer]
+//   if (result) {
+//     for(const property in result) {
+//       console.log(`${property}: ${result[property]}`);
+//   }
+//     console.log("You Product has been found", answer)
+//     rl.question("Press S to search again or Q to  quit: ", (nextMove)=>{
+//       if(nextMove == "S"){
+//         rl.question("Input your medical licence number: ", inputHandler)
+//       }else if (nextMove == "Q"){
+//         rl.close()
+//       }else{
+//         rl.question("Input your medical licence number: ", inputHandler)
+//       }
+//       rl.close
+//     })
+//     // rl.close()
+//     return true
+//   } else {
+//     rl.write("The Medical licence number was not found :(\n")
+//     rl.question("Input your medical licence number: ", inputHandler)
+//   }
+// }
+// rl.question("Input your medical licence number: ", inputHandler)
 
 // let result = correctAswers.includes(answer)
 // console.log(Object.values(result))
