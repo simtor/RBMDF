@@ -40,11 +40,4 @@ function inputHandler(answer) {
 }
 rl.question("Input your medical licence number: ", inputHandler)
 
-
-
-
-
-
-
-
-
+module.exports = inputHandler

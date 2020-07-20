@@ -1,5 +1,5 @@
-const product = require("./products.js")
+// const product = require("./products.js")
 
-describe("Produc class test", ()=>{
+// describe("Produc class test", ()=>{
     
-})
+// })
