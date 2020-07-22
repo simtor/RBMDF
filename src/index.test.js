@@ -1,34 +1,41 @@
 const inputHandler = require("./index.js")
 
+
+
+// test("Testing functionallity", ()=>{
+//     expect(productInfo("PL001730050")).toBe(true)
+// })
+
 // test("Test function works", ()=>{
     
 // })
+
 
 test("PL001730050", ()=>{
     expect(inputHandler("PL001730050")).toBe(true)
     // expect(inputHandler("PL001730050")).toMatchSnapshot();
 })
 
-test("PL001655013", ()=>{
-    expect(inputHandler("PL001655013")).toBe(true);
-    // expect(inputHandler("PL001655013")).toMatchSnapshot();
-})
+// test("PL001655013", ()=>{
+//     expect(inputHandler("PL001655013")).toBe(true);
+//     // expect(inputHandler("PL001655013")).toMatchSnapshot();
+// })
 
-test("PL136060206", ()=>{
-    expect(inputHandler("PL136060206")).toBe(true);
-    // expect(inputHandler("PL136060206")).toMatchSnapshot();
-})
+// test("PL136060206", ()=>{
+//     expect(inputHandler("PL136060206")).toBe(true);
+//     // expect(inputHandler("PL136060206")).toMatchSnapshot();
+// })
 
 
-test("PL252980158", ()=>{
-    expect(inputHandler("PL252980158")).toBe(true);
-    // expect(inputHandler("PL252980158")).toMatchSnapshot();
-})
+// test("PL252980158", ()=>{
+//     expect(inputHandler("PL252980158")).toBe(true);
+//     // expect(inputHandler("PL252980158")).toMatchSnapshot();
+// })
 
-test("PL201170079", ()=>{
-    expect(inputHandler("PL201170079")).toBe(true);
-    // expect(inputHandler("PL201170079")).toMatchSnapshot();
-})
+// test("PL201170079", ()=>{
+//     expect(inputHandler("PL201170079")).toBe(true);
+//     // expect(inputHandler("PL201170079")).toMatchSnapshot();
+// })
 
 // test("Medical data test", ()=>{
 //     expect(inputHandler("PL001730050")).toBe(true)

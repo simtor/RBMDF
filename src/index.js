@@ -17,27 +17,31 @@ let products = {
   "PL201170079": PL201170079
 }
 
+function productInfo(result){
+  for(const property in result) {
+   console.log(`${property}: ${result[property]}`);
+}
+return true
+}
+
 function inputHandler(answer) {
+  if (answer === "Q") {
+    rl.close()
+    return null
+  }
+
   let result = products[answer]
   if (result) {
-    for(const property in result) {
-      console.log(`${property}: ${result[property]}`);
-  }
+    productInfo();
     console.log("You Product has been found", answer)
-    rl.question("Press S to search again or Q to  quit: ", (nextMove)=>{ 
-      if (nextMove === "Q") {
-        rl.close()
-      } else {
-        rl.question("Input your medical licence number: ", inputHandler)
-      }
-      rl.close
-    })
+    rl.question("Input your medical licence number or Q to quit: ", inputHandler)
     return true;
   } else {
     rl.write("The Medical licence number was not found :(\n")
     rl.question("Input your medical licence number: ", inputHandler)
   }
 }
-rl.question("Input your medical licence number: ", inputHandler)
+rl.question("Input your medical licence number or Q to quit: ", inputHandler)
 
 module.exports = inputHandler
+module.exports = productInfo
