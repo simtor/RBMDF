@@ -32,7 +32,7 @@ function inputHandler(answer) {
       }
       rl.close
     })
-    return true
+    return true;
   } else {
     rl.write("The Medical licence number was not found :(\n")
     rl.question("Input your medical licence number: ", inputHandler)
