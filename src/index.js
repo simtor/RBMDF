@@ -1,4 +1,5 @@
 const readline = require('readline');
+const productInfo = require("./productInfo.js")
 const rl = readline.createInterface({
   input : process.stdin, 
   output : process.stdout
@@ -17,25 +18,17 @@ let products = {
   "PL201170079": PL201170079
 }
 
-function productInfo(result){
-  for(const property in result) {
-   console.log(`${property}: ${result[property]}`);
-}
-return true
-}
-
 function inputHandler(answer) {
   if (answer === "Q") {
     rl.close()
     return null
   }
-
   let result = products[answer]
   if (result) {
     productInfo();
     console.log("You Product has been found", answer)
     rl.question("Input your medical licence number or Q to quit: ", inputHandler)
-    return true;
+    return true
   } else {
     rl.write("The Medical licence number was not found :(\n")
     rl.question("Input your medical licence number: ", inputHandler)
@@ -43,5 +36,6 @@ function inputHandler(answer) {
 }
 rl.question("Input your medical licence number or Q to quit: ", inputHandler)
 
+
 module.exports = inputHandler
-module.exports = productInfo
+

@@ -1,18 +1,11 @@
 const inputHandler = require("./index.js")
-
-
-
-// test("Testing functionallity", ()=>{
-//     expect(productInfo("PL001730050")).toBe(true)
-// })
-
+const productInfo = require("./productInfo.js")
 // test("Test function works", ()=>{
     
 // })
 
-
 test("PL001730050", ()=>{
-    expect(inputHandler("PL001730050")).toBe(true)
+    expect(productInfo("PL001730050")).toBe(true)
     // expect(inputHandler("PL001730050")).toMatchSnapshot();
 })
 
