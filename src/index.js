@@ -20,10 +20,11 @@ function inputHandler(answer) {
     return true
   } else {
     rl.write("The Medical licence number was not found :(\n")
-    rl.question("Input your medical licence number: ", inputHandler)
+    rl.question("Input your medical licence number or Q to quit: ", inputHandler)
   }
 }
 rl.question("Input your medical licence number or Q to quit: ", inputHandler)
+
 
 
 module.exports = inputHandler
