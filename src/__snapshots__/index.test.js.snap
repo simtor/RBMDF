@@ -27,3 +27,12 @@ Object {
   "url": "https://mhraproductsproduction.blob.core.windows.net/docs/10c02830183326751553be62be5e2564fb47e970",
 }
 `;
+
+exports[`Snapshot input handler 3`] = `
+Object {
+  "Substance": "Tadafil",
+  "dose": "10mg",
+  "name": "Tadalafil 10mg film-coated tablets",
+  "url": "https://mhraproductsproduction.blob.core.windows.net/docs/a1744b861fbda647f286cc70865d30cf2673c077",
+}
+`;

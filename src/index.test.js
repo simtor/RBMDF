@@ -30,15 +30,20 @@ test("Snapshot input handler", ()=>{
     expect(inputHandler("PL001655013")).toMatchSnapshot();
 })
 
-// test("PL001730050", ()=>{
-//     expect(productInfo("PL001730050")).toBe(true)
-//     expect(productInfo("PL001730050")).toMatchSnapshot();
-// })
 
-// test("PL001655013", ()=>{
-//     expect(productInfo("PL001655013")).toBe(true);
-//     expect(productInfo("PL001655013")).toMatchSnapshot();
-// })
+test("PL136060206", ()=>{
+    expect(inputHandler("PL136060206")).toEqual({
+        "Substance": "Tadafil",
+        "dose": "10mg",
+        "name": "Tadalafil 10mg film-coated tablets",
+        "url": "https://mhraproductsproduction.blob.core.windows.net/docs/a1744b861fbda647f286cc70865d30cf2673c077",
+    }) 
+})
+
+test("Snapshot input handler", ()=>{
+    expect(inputHandler("PL136060206")).toMatchSnapshot();
+})
+
 
 // test("PL136060206", ()=>{
 //     expect(productInfo("PL136060206")).toBe(true);
