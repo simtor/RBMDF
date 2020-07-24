@@ -18,3 +18,12 @@ Object {
   "url": "https://mhraproductsproduction.blob.core.windows.net/docs/54454db7a69e9153ab7302232cdb8ee9230579ca",
 }
 `;
+
+exports[`Snapshot input handler 2`] = `
+Object {
+  "Substance": "Paracetamol",
+  "dose": "5mg",
+  "name": "Anadin Extra",
+  "url": "https://mhraproductsproduction.blob.core.windows.net/docs/10c02830183326751553be62be5e2564fb47e970",
+}
+`;

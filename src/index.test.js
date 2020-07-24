@@ -16,6 +16,20 @@ test("Snapshot input handler", ()=>{
     expect(inputHandler("PL001730050")).toMatchSnapshot();
 })
 
+
+test("PL001655013", ()=>{
+    expect(inputHandler("PL001655013")).toEqual({
+       "Substance": "Paracetamol",
+       "dose": "5mg",
+       "name": "Anadin Extra",
+       "url": "https://mhraproductsproduction.blob.core.windows.net/docs/10c02830183326751553be62be5e2564fb47e970",
+    }) 
+})
+
+test("Snapshot input handler", ()=>{
+    expect(inputHandler("PL001655013")).toMatchSnapshot();
+})
+
 // test("PL001730050", ()=>{
 //     expect(productInfo("PL001730050")).toBe(true)
 //     expect(productInfo("PL001730050")).toMatchSnapshot();
