@@ -2,11 +2,19 @@ const inputHandler = require("./index.js")
 const productInfo = require("./productInfo.js")
 
 
-// test("PL001730050", ()=>{
-//     expect()
-// })
+test("PL001730050", ()=>{
+    expect(inputHandler("PL001730050")).toEqual({
+        "Substance": "Ibuprofen",
+        "dose": "10mg",
+        "name": "Ibugel gel",
+        "url": "https://mhraproductsproduction.blob.core.windows.net/docs/54454db7a69e9153ab7302232cdb8ee9230579ca",
+          })
+})
 
 
+test("Snapshot input handler", ()=>{
+    expect(inputHandler("PL001730050")).toMatchSnapshot();
+})
 
 // test("PL001730050", ()=>{
 //     expect(productInfo("PL001730050")).toBe(true)

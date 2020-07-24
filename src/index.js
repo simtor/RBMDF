@@ -12,11 +12,12 @@ function inputHandler(answer) {
     return null
   }
   let result = products[answer]
+  console.log(result)
   if (result) {
     productInfo(result);
     console.log("You Product has been found", answer)
     rl.question("Input your medical licence number or Q to quit: ", inputHandler)
-    return true
+    return result
   } else {
     rl.write("The Medical licence number was not found :(\n")
     rl.question("Input your medical licence number or Q to quit: ", inputHandler)

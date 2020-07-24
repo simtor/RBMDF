@@ -16,13 +16,10 @@ let mockProducts = {
 jest.mock("./medicineInfo.js", () => (mockProducts));
 
 
-test("PL001730050", ()=>{
-    // expect(productInfo("PL001730050")).toBe(true)
+test("Testing mock function", ()=>{
+    expect(productInfo("PL001730050")).toBe(true)
     // expect(productInfo("PL001730050")).toMatchSnapshot();
 })
-
-
-
 
 
 // test("PL001655013", ()=>{
