@@ -45,6 +45,9 @@ test("Snapshot input handler", ()=>{
 })
 
 
+//💻✨ - Setting up a Mac for Web Development - 2020 - Homebrew / Terminal / git / Code Editor / Node.js
+
+
 // test("PL136060206", ()=>{
 //     expect(productInfo("PL136060206")).toBe(true);
 //     expect(productInfo("PL136060206")).toMatchSnapshot();
