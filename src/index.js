@@ -6,7 +6,6 @@ const rl = readline.createInterface({
   output : process.stdout
 });
 
-
 function inputHandler(answer) {
   if (answer === "Q") {
     rl.close()
@@ -14,7 +13,7 @@ function inputHandler(answer) {
   }
   let result = products[answer]
   if (result) {
-    productInfo();
+    productInfo(result);
     console.log("You Product has been found", answer)
     rl.question("Input your medical licence number or Q to quit: ", inputHandler)
     return true
@@ -24,7 +23,6 @@ function inputHandler(answer) {
   }
 }
 rl.question("Input your medical licence number or Q to quit: ", inputHandler)
-
 
 
 module.exports = inputHandler

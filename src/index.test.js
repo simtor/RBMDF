@@ -1,10 +1,17 @@
-// const inputHandler = require("./index.js")
+const inputHandler = require("./index.js")
 const productInfo = require("./productInfo.js")
 
-test("PL001730050", ()=>{
-    expect(productInfo("PL001730050")).toBe(true)
-    expect(productInfo("PL001730050")).toMatchSnapshot();
-})
+
+// test("PL001730050", ()=>{
+//     expect()
+// })
+
+
+
+// test("PL001730050", ()=>{
+//     expect(productInfo("PL001730050")).toBe(true)
+//     expect(productInfo("PL001730050")).toMatchSnapshot();
+// })
 
 // test("PL001655013", ()=>{
 //     expect(productInfo("PL001655013")).toBe(true);

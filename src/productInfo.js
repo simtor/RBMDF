@@ -1,4 +1,4 @@
-// const inputHandler = require("./index.js")
+const inputHandler = require("./index.js")
 
 function productInfo(result){
     for(const property in result) {
