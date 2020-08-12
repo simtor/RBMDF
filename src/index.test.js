@@ -1,5 +1,5 @@
 const inputHandler = require("./index.js")
-const productInfo = require("./productInfo.js")
+// const productInfo = require("./productInfo.js")
 
 
 test("PL001730050", ()=>{
@@ -12,9 +12,9 @@ test("PL001730050", ()=>{
 })
 
 
-test("Snapshot input handler", ()=>{
-    expect(inputHandler("PL001730050")).toMatchSnapshot();
-})
+// test("Snapshot input handler", ()=>{
+//     expect(inputHandler("PL001730050")).toMatchSnapshot();
+// })
 
 
 test("PL001655013", ()=>{
@@ -26,9 +26,9 @@ test("PL001655013", ()=>{
     }) 
 })
 
-test("Snapshot input handler", ()=>{
-    expect(inputHandler("PL001655013")).toMatchSnapshot();
-})
+// test("Snapshot input handler", ()=>{
+//     expect(inputHandler("PL001655013")).toMatchSnapshot();
+// })
 
 
 test("PL136060206", ()=>{
@@ -40,12 +40,11 @@ test("PL136060206", ()=>{
     }) 
 })
 
-test("Snapshot input handler", ()=>{
-    expect(inputHandler("PL136060206")).toMatchSnapshot();
-})
+// test("Snapshot input handler", ()=>{
+//     expect(inputHandler("PL136060206")).toMatchSnapshot();
+// })
 
 
-//💻✨ - Setting up a Mac for Web Development - 2020 - Homebrew / Terminal / git / Code Editor / Node.js
 
 
 // test("PL136060206", ()=>{
