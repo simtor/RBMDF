@@ -4,6 +4,7 @@
   "description": "Medical Drug Finder",
   "main": "index.js",
   "scripts": {
+    "build":"tsc",
     "start": "node src/models/index.js",
     "test": "jest --coverage"
   },
