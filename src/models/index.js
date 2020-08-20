@@ -1,6 +1,6 @@
 const readline = require('readline');
-const productInfo = require("./productInfo.js")
-const products = require("./medicineInfo")
+const productInfo = require("../services/productInfo.js")
+const products = require("../repositories/medicineInfo")
 const rl = readline.createInterface({
   input : process.stdin, 
   output : process.stdout
