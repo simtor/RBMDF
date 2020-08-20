@@ -12,7 +12,7 @@ function inputHandler(answer) {
     return null
   }
   let result = products[answer]
-  console.log(result)
+  // console.log(result)
   if (result) {
     productInfo(result);
     console.log("You Product has been found", answer)
