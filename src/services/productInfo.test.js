@@ -1,6 +1,8 @@
-const productInfo = require("./productInfo.js");
+const productInfo = require("../services/productInfo.js")
+// const productInfo = require("./productInfo.js");
 // const products = require("./medicineInfo.js");
 // const products = require("./medicineInfo.js");
+
 
 let mockProduct = {
     name: 'Simtor', 
@@ -13,7 +15,7 @@ let mockProducts = {
     "PL001735050":mockProduct
 }
 
-jest.mock("./medicineInfo.js", () => (mockProducts));
+jest.mock("../repositories/medicineInfo", () => (mockProducts));
 
 
 test("Testing mock function", ()=>{
