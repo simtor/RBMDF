@@ -7,12 +7,12 @@ const rl = readline.createInterface({
   output : process.stdout
 });
 
-function inputHandler(answer) {
+export default function inputHandler(answer:string) {
   if (answer === "Q") {
     rl.close()
     return null
   }
-  let result = products[answer]
+  let result:string = products[answer]
   // console.log(result)
   if (result) {
     productInfo(result);
@@ -27,5 +27,5 @@ function inputHandler(answer) {
 rl.question("Input your medical licence number or Q to quit: ", inputHandler)
 
 
-export default inputHandler;
+// export default inputHandler;
 
