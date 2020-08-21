@@ -2,6 +2,7 @@
   "name": "rbmdf",
   "version": "1.0.0",
   "description": "Medical Drug Finder",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
