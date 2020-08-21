@@ -3,7 +3,7 @@ let PL001655013 = {name: 'Anadin Extra', dose: '5mg', Substance: 'Paracetamol', 
 let PL136060206 = {name: 'Tadalafil 10mg film-coated tablets', dose: '10mg', Substance: 'Tadafil', url:'https://mhraproductsproduction.blob.core.windows.net/docs/a1744b861fbda647f286cc70865d30cf2673c077'}
 let PL252980158 = {name: 'Nabilone 1mg capsules', dose: '1mg', Substance: 'Nabilone', url:'https://mhraproductsproduction.blob.core.windows.net/docs/b68e1e028e44806a00a65d016aec4f1c90436ac4'}
 let PL201170079 = {name: 'Ramipril 2.5mg tablets', dose: '2.5mg', Substance: 'Ramipril', url:'https://mhraproductsproduction.blob.core.windows.net/docs/bdc8d29cd2957f0ffdd230f6f47a5d9cf5b3f039'}
-//cover to typescript
+
 let products = {
   "PL001730050": PL001730050,
   "PL001655013": PL001655013,
