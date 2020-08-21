@@ -1,4 +1,5 @@
-const inputHandler = require("./index.js")
+import inputHandler from "./index.js";
+// const inputHandler = require("./index.js")
 // const productInfo = require("./productInfo.js")
 
 

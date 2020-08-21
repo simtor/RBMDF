@@ -1,6 +1,7 @@
 const readline = require('readline');
-const productInfo = require("../services/productInfo.js")
-const products = require("../repositories/medicineInfo")
+import  productInfo from "../services/productInfo";
+import products from "../repositories/medicineInfo";
+// const products = require("../repositories/medicineInfo")
 const rl = readline.createInterface({
   input : process.stdin, 
   output : process.stdout
@@ -26,5 +27,5 @@ function inputHandler(answer) {
 rl.question("Input your medical licence number or Q to quit: ", inputHandler)
 
 
-module.exports = inputHandler
+export default inputHandler;
 

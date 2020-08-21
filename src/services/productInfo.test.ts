@@ -1,4 +1,4 @@
-const productInfo = require("../services/productInfo.js")
+import productInfo from "../services/productInfo.js";
 // const productInfo = require("./productInfo.js");
 // const products = require("./medicineInfo.js");
 // const products = require("./medicineInfo.js");
