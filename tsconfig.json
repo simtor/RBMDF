@@ -5,5 +5,5 @@
       "sourceMap": true,
       "outDir": "./out"
     },
-    "fileGlob": ["./src_ts/*.ts"]
+    "fileGlob": ["./src/*.ts"]
   }
