@@ -4,13 +4,14 @@
   "description": "Medical Drug Finder",
   "main": "index.js",
   "scripts": {
-    "build":"tsc",
+    "build": "tsc",
     "start": "node src/models/index.js",
     "test": "jest --coverage"
   },
   "author": "Simone Ram",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.10",
     "jest": "^26.1.0",
     "typescript": "^3.9.7"
   }
