@@ -1,5 +1,5 @@
 const readline = require('readline');
-import  productInfo from "../services/productInfo"
+import productInfo from "../services/productInfo"
 import products from "../repositories/medicineInfo"
 // const products = require("../repositories/medicineInfo")
 const rl = readline.createInterface({
