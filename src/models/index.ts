@@ -13,7 +13,6 @@ export default function inputHandler(answer:string) {
     return null
   }
   let result:string = products[answer]
-  // console.log(result)
   if (result) {
     productInfo(result);
     console.log("You Product has been found", answer)
