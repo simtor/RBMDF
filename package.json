@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node src/models/index.ts",
-    "test": "jest --coverage"
+    "start": "start npm run watch && nodemon out/models/index.js",
+    "start-mac": "npm run watch & nodemon out/models/index.js",
+    "test": "jest --coverage",
+    "watch": "tsc --watch"
   },
   "author": "Simone Ram",
   "license": "MIT",
