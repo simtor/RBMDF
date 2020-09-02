@@ -1,6 +1,4 @@
-import inputHandler from "./index.js";
-// const inputHandler = require("./index.js")
-// const productInfo = require("./productInfo.js")
+import inputHandler from "./index";
 
 
 test("PL001730050", ()=>{

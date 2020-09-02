@@ -1,6 +1,11 @@
 // "start": "start npm run watch && nodemon out/models/index.js",
 // "start": "node out/models/index.js",
 
+
+// const productInfo = require("./productInfo.js");
+// const products = require("./medicineInfo.js");
+// const products = require("./medicineInfo.js");
+
 // const readline = require('readline');
 // const rl = readline.createInterface({
 //   input : process.stdin, 

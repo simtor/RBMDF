@@ -1,8 +1,4 @@
-import productInfo from "../services/productInfo.js";
-// const productInfo = require("./productInfo.js");
-// const products = require("./medicineInfo.js");
-// const products = require("./medicineInfo.js");
-
+import productInfo from "./productInfo";
 
 let mockProduct = {
     name: 'Simtor', 
