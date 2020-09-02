@@ -1,10 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var index_js_1 = require("./index.js");
-// const inputHandler = require("./index.js")
-// const productInfo = require("./productInfo.js")
+var index_1 = require("./index");
 test("PL001730050", function () {
-    expect(index_js_1.default("PL001730050")).toEqual({
+    expect(index_1.default("PL001730050")).toEqual({
         "Substance": "Ibuprofen",
         "dose": "10mg",
         "name": "Ibugel gel",
@@ -15,7 +13,7 @@ test("PL001730050", function () {
 //     expect(inputHandler("PL001730050")).toMatchSnapshot();
 // })
 test("PL001655013", function () {
-    expect(index_js_1.default("PL001655013")).toEqual({
+    expect(index_1.default("PL001655013")).toEqual({
         "Substance": "Paracetamol",
         "dose": "5mg",
         "name": "Anadin Extra",
@@ -26,7 +24,7 @@ test("PL001655013", function () {
 //     expect(inputHandler("PL001655013")).toMatchSnapshot();
 // })
 test("PL136060206", function () {
-    expect(index_js_1.default("PL136060206")).toEqual({
+    expect(index_1.default("PL136060206")).toEqual({
         "Substance": "Tadafil",
         "dose": "10mg",
         "name": "Tadalafil 10mg film-coated tablets",

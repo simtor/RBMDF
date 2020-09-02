@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var productInfo_js_1 = require("../services/productInfo.js");
-// const productInfo = require("./productInfo.js");
-// const products = require("./medicineInfo.js");
-// const products = require("./medicineInfo.js");
+var productInfo_1 = require("./productInfo");
 var mockProduct = {
     name: 'Simtor',
     dose: '2.5mg',
@@ -15,7 +12,7 @@ var mockProducts = {
 };
 jest.mock("../repositories/medicineInfo", function () { return (mockProducts); });
 test("Testing mock function", function () {
-    expect(productInfo_js_1.default("PL001730050")).toBe(true);
+    expect(productInfo_1.default("PL001730050")).toBe(true);
     // expect(productInfo("PL001730050")).toMatchSnapshot();
 });
 // test("PL001655013", ()=>{
