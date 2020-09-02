@@ -1,7 +1,7 @@
 // "start": "start npm run watch && nodemon out/models/index.js",
 // "start": "node out/models/index.js",
 // "dev": "npm run watch & nodemon out/models/index.js",
-
+//solve error
 
 // const productInfo = require("./productInfo.js");
 // const products = require("./medicineInfo.js");
