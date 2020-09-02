@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "dev":"node out/app-server.js",
     "start": "npm run watch && nodemon out/models/index.js",
     "start-mac": "npm run watch & nodemon out/models/index.js",
     "test": "jest --coverage",
