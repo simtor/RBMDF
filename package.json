@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.10",
     "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
     "typescript": "^3.9.7"
   }
 }
