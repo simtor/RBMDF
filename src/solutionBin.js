@@ -1,8 +1,12 @@
+// "start": "start npm run watch && nodemon out/models/index.js",
+// "start": "node out/models/index.js",
+
 // const readline = require('readline');
 // const rl = readline.createInterface({
 //   input : process.stdin, 
 //   output : process.stdout
 // });
+
 
 // let PL001730050 = {name: 'Ibugel gel', dose: '10mg', Substance: 'Ibuprofen', url:'https://mhraproductsproduction.blob.core.windows.net/docs/54454db7a69e9153ab7302232cdb8ee9230579ca'}
 // let PL001655013 = {name: 'Anadin Extra', dose: '5mg', Substance: 'Paracetamol', url:'https://mhraproductsproduction.blob.core.windows.net/docs/10c02830183326751553be62be5e2564fb47e970'}
