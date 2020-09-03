@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Drug finder!')
 })
 
+
+app.set("title","Food finder")
+
+app.set("view engine", "pug")
+app.set("view", "./out/view")
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
