@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev":"npm run watch && nodemon out/app-server.js",
-    "dev-mac":"npm run watch & nodemon out/app-server.js",
-    "start": "npm run watch && nodemon out/models/index.js",
+    "dev": "start npm run watch && nodemon out/app-server.js",
+    "dev-mac": "npm run watch & nodemon out/app-server.js",
+    "start": "start npm run watch && nodemon out/models/index.js",
     "start-mac": "npm run watch & nodemon out/models/index.js",
     "test": "jest --coverage",
     "watch": "tsc --watch"
