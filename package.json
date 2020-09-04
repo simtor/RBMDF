@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "copy-styles": "copyfiles -f \"src/views/*.pug\" out/view",
     "dev": "start npm run watch && nodemon out/app-server.js",
     "dev-mac": "npm run watch & nodemon out/app-server.js",
     "start": "start npm run watch && nodemon out/models/index.js",
