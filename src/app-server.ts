@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 
 
-app.set("title","Food finder")
+app.set("title","Drug finder")
 
 app.set("view engine", "pug")
 app.set("view", "./out/view")
