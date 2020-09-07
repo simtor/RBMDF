@@ -7,9 +7,9 @@ app.get('/', function (req, res) {
 app.get('/', function (req, res) {
     res.render("index", { title: "I'm using pug", message: "Wow lovely" });
 });
-app.set("title", "Food finder");
+app.set("title", "Drug finder");
 app.set("view engine", "pug");
-app.set("view", "./out/view");
+app.set("views", "./out/views");
 app.listen(port, function () {
     console.log("Example app listening at http://localhost:" + port);
 });
