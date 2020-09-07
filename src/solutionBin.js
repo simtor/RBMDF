@@ -2,6 +2,7 @@
 // "start": "node out/models/index.js",
 // "dev": "npm run watch & nodemon out/models/index.js",
 //"dev": "start npm run watch && nodemon out/app-server.js",
+//"dev-mac": "npm run watch & nodemon out/app-server.js",
 
 
 // const productInfo = require("./productInfo.js");
