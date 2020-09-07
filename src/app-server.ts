@@ -5,8 +5,6 @@ const port = 2480
 import products from "./repositories/medicineInfo"
 
 
-let products = new products()
-
 app.get('/', (req, res) => {
   res.send('Welcome to the Drug finder!')
 })
@@ -15,9 +13,9 @@ app.get('/file', (req, res) => {
   res.render("index",{title: "I'm using pug", message:"Wow lovely" })
 })
 
-app.get("/search/:product",(req, res) => {
-  res.send{products.findProduct(req.params.product.toUpperCase())}
-})
+// app.get("/search/:product",(req, res) => {
+//   res.send{products.findProduct(req.params.product.toUpperCase())}
+// })
 
 
 app.set("title","Drug finder")
