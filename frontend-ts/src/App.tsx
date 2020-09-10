@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/index"
+import DrugSearch from "./components/Foodsearch/index"
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header name="Simone" age={19}/>
+        <DrugSearch />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
