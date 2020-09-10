@@ -1,17 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/index"
 
-interface HeaderProps{
-  name: string
-  age: number  
-}
-
-function Header(props: HeaderProps){
-  return(
-    <h1>Hello{props.name}. your{props.age}</h1>
-  )
-}
 
 
 function App() {
