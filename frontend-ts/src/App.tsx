@@ -1,18 +1,26 @@
-import React from 'react';
+import React, {useState, FormEvent}from "react"
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/index"
 import DrugSearch from "./components/Foodsearch/index"
-import {DrugSelect} from "./components/Drugselect/index"
+import DrugSelect from "./components/Drugselect/index"
 
 
 
 
 function App() {
+
+  let [basket, setBasket] = useState<string[]>([])
+
+  const updateBasket = (drugs: String) => {
+    basket.push()
+    setBasket(basket)
+    
+  }
   return (
     <div className="App">
 
-      <DrugSelect name="Dune"/>
+      <DrugSelect name="Dune" onSubmit={updateBasket}/>
       {/* <header className="App-header">
         <Header name="Simone" age={19}/>
         <DrugSearch />

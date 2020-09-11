@@ -12,18 +12,19 @@ color: blue;
 
     interface IDrugSelectProps{
         name: string 
+        onSubmit: (drugs: string) =>void
       }
 
-    export function DrugSelect(props: IDrugSelectProps){
-        let [basket, setBasket] = useState<string[]>([])
+    export default function DrugSelect(props: IDrugSelectProps){
         const handlesubmit =(e: FormEvent<HTMLFormElement>) =>{
             e.preventDefault()
-            basket.push(props.name)
-            setBasket(basket)
+            props.onSubmit(props.name)
+            // basket.push(props.name)
+            // setBasket(basket)
         }
         return(
             <form onSubmit={handlesubmit}>
-                <label>Drug lists</label>
+                {/* <label>Drug lists</label> */}
                 <button type="button">{props.name}</button>
             </form>
         )
