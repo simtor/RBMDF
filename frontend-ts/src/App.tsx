@@ -1,4 +1,4 @@
-import React, {useState, FormEvent}from "react"
+import React, {useState, useEffect}from "react"
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/index"
@@ -17,6 +17,12 @@ function App() {
     setBasket(basket)
     
   }
+
+  useEffect(()=>{
+    fetch("/hello").then(response => console.log(response))
+
+    console.log("Simone Ram was here")
+  })
   return (
     <div className="App">
 

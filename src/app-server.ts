@@ -5,7 +5,7 @@ const port = 2480
 import products from "./repositories/medicineInfo"
 
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
   res.send('Welcome to the Drug finder!')
 })
 
