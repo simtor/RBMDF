@@ -2,13 +2,15 @@ const express = require('express')
 const app = express()
 const port = 2480
 // import productInfo from "./services/productInfo"
-import products from "./repositories/medicineInfo"
+import products from "./repositories/medicineInfo";
+import connectDb  from './models'
+import models from './models'
 
 
 app.get('/hello', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   // res.send('Welcome to the Drug finder!')
-  res.send({'Welcome to the Drug finder!'})
+  // res.send({'Welcome to the Drug finder!'})
   
 })
 
@@ -26,6 +28,7 @@ app.set("title","Drug finder")
 app.set("view engine", "pug")
 app.set("views", "./out/views")
 
+connectDb()
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
