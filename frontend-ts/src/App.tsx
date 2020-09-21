@@ -11,6 +11,7 @@ import DrugSelect from "./components/Drugselect/index"
 function App() {
 
   let [basket, setBasket] = useState<string[]>([])
+  let [menu, setMenu] = useState([])
 
   const updateBasket = (drugs: String) => {
     basket.push()
@@ -19,14 +20,17 @@ function App() {
   }
 
   useEffect(()=>{
-    fetch("/hello").then(response => console.log(response))
+    fetch("/hello")
+    .then((response)=> response.json())
+    .then((response)=> console.log(response))
 
     console.log("Simone Ram was here")
   })
   return (
     <div className="App">
+      {menu.map(recordItem =><p>{recordItem}</p>)}
 
-      <DrugSelect name="Dune" onSubmit={updateBasket}/>
+      {/* <DrugSelect name="Dune" onSubmit={updateBasket}/> */}
       {/* <header className="App-header">
         <Header name="Simone" age={19}/>
         <DrugSearch />

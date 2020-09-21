@@ -6,7 +6,10 @@ import products from "./repositories/medicineInfo"
 
 
 app.get('/hello', (req, res) => {
-  res.send('Welcome to the Drug finder!')
+  res.setHeader('Content-Type', 'application/json')
+  // res.send('Welcome to the Drug finder!')
+  res.send({'Welcome to the Drug finder!'})
+  
 })
 
 app.get('/file', (req, res) => {
