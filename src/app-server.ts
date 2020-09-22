@@ -42,8 +42,16 @@ app.set("view engine", "pug")
 app.set("views", "./out/views")
 
 connectDb().then(async ()=>{
+  createSyrups()
   app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
   })
 })
 
+const createSyrups = async ()=>{
+  const syrups1 = new models.Syrup({
+    name: 'cough syrup'
+  });
+  await syrups1.save();
+
+};
