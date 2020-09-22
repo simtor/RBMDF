@@ -10,6 +10,6 @@ const connectDb = ()=> {
 
 const models = {Syrup};
 
-export {connectDb};
+export  {connectDb};
 
 export default models;

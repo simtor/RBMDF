@@ -1,7 +1,7 @@
 // const express = require('express')
 import express, {Request, Response} from "express"
-import models from './models';
-import connectDb from './models';
+// import models from './models';
+import models, {connectDb} from './models/syrup-index';
 
 import mongoose from "mongoose"
 const syrupsSchema = new mongoose.Schema({
