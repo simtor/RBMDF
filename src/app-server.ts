@@ -1,10 +1,23 @@
-const express = require('express')
+// const express = require('express')
+import express, {Request, Response} from "express"
+import models from './models';
+import connectDb from './models';
+
+import mongoose from "mongoose"
+const syrupsSchema = new mongoose.Schema({
+  name:{
+      type: String,
+      unique: true,
+      required: true,
+  },
+},
+{timestamps: true}
+)
 const app = express()
 const port = 2480
 // import productInfo from "./services/productInfo"
 import products from "./repositories/medicineInfo";
-import connectDb  from './models'
-import models from './models'
+
 
 
 app.get('/hello', (req, res) => {
@@ -28,8 +41,9 @@ app.set("title","Drug finder")
 app.set("view engine", "pug")
 app.set("views", "./out/views")
 
-connectDb()
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+connectDb().then(async ()=>{
+  app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+  })
 })
+

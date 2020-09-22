@@ -5,7 +5,7 @@ import Syrup from './syrups';
 
 
 const connectDb = ()=> {
-    return mongoose.connect("mongodb://127.0.0.1:27017");
+    return mongoose.connect("mongodb://127.0.0.1:27017/local");
 };
 
 const models = {Syrup};
