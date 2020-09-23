@@ -20,9 +20,9 @@ function App() {
   }
 
   useEffect(()=>{
-    fetch("/hello")
+    fetch("/")
     .then((response)=> response.json())
-    .then((response)=> console.log(response))
+    .then((response)=> console.log(response));
 
     // console.log("Simone Ram was here")
   })
