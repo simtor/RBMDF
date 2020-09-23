@@ -8,7 +8,7 @@ const syrupsSchema = new mongoose.Schema({
         required: true,
     },
 },
-{timestamps: true}
+{timestamp: true}
 )
 
 const Syrup = mongoose.model("Syrup", syrupsSchema)
