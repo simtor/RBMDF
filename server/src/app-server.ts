@@ -4,15 +4,6 @@ import express, {Request, Response} from "express"
 import models, {connectDb} from './models/syrup-index';
 
 import mongoose from "mongoose"
-const syrupsSchema = new mongoose.Schema({
-  name:{
-      type: String,
-      unique: true,
-      required: true,
-  },
-},
-{timestamps: true}
-)
 const app = express()
 const port = 2480
 // import productInfo from "./services/productInfo"
@@ -42,7 +33,7 @@ app.set("view engine", "pug")
 app.set("views", "./out/views")
 
 connectDb().then(async ()=>{
-  createSyrups()
+  await createSyrups()
   app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
   })

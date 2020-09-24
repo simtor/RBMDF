@@ -9,7 +9,7 @@
     "dev": "start npm run copy-styles && start npm run watch && nodemon out/app-server.js",
     "dev-mac": "npm run copy-styles & npm run watch & nodemon out/app-server.js",
     "start": "start npm run watch && nodemon out/models/index.js",
-    "start-mac": "npm run watch & nodemon out/models/index.js",
+    "start-mac": "npm run watch & nodemon out/app-server.js",
     "test": "jest --coverage",
     "watch": "tsc --watch"
   },

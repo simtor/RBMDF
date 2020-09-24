@@ -20,7 +20,7 @@ function App() {
   }
 
   useEffect(()=>{
-    fetch("/")
+    fetch("/hello")
     .then((response)=> response.json())
     .then((response)=> console.log(response));
 
